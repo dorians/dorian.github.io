@@ -21,10 +21,7 @@ submit.onclick = function() {
 
         if (data.type == "push" && data.push.application_name == "Phone") {
         	var title = data.push.title;
-        	//alert(title);
-        	var wi = window.open('http://www.google.com', 'window_name', 'height=200,width=200');
-			wi.focus();
-
+        	alert(title);
         	messages.innerHTML += "<p>" + date + ": " + title + "</p>";
         }
     }
